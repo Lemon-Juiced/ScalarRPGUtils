@@ -9,8 +9,6 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import site.scalarstudios.scalarrpgutils.creativetab.ScalarRPGCreativeTabs;
 import site.scalarstudios.scalarrpgutils.item.ScalarRPGItems;
-import site.scalarstudios.scalarrpgutils.item.curios.AbstractCurioItem;
-import top.theillusivec4.curios.api.CuriosApi;
 
 @Mod(ScalarRPGUtils.MODID)
 public class ScalarRPGUtils {
