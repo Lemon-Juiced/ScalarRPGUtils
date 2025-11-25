@@ -114,11 +114,11 @@ public class AbstractCurioItem extends Item implements ICurioItem {
         if (current == null || current.getAmplifier() < targetAmplifier) {
             int durationTicks = 20; // Refresh every tick (1 second duration)
             boolean ambient = false;
-            // Intended False, true for debug
-            // boolean showParticles = false;
-            // boolean showIcon = false;
-            boolean showParticles = true;
-            boolean showIcon = true;
+            // Intended false, true for debug
+            boolean showParticles = false;
+            boolean showIcon = false;
+            // boolean showParticles = true;
+            // boolean showIcon = true;
 
             MobEffectInstance toApply = new MobEffectInstance(effectHolder, durationTicks, targetAmplifier, ambient, showParticles, showIcon);
             player.addEffect(toApply);
