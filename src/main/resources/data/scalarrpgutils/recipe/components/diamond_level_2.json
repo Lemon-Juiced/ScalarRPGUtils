@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "/"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:diamond"
+    },
+    "/": {
+      "item": "scalarrpgutils:diamond_burnisher"
+    }
+  },
+  "result": {
+    "id": "scalarrpgutils:diamond_level_2",
+    "count": 1
+  }
+}

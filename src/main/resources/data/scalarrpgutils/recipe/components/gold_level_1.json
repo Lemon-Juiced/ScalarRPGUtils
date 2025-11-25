@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "/"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:gold_ingot"
+    },
+    "/": {
+      "item": "scalarrpgutils:iron_burnisher"
+    }
+  },
+  "result": {
+    "id": "scalarrpgutils:gold_level_1",
+    "count": 1
+  }
+}

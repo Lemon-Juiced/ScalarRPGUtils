@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "/"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:emerald"
+    },
+    "/": {
+      "item": "scalarrpgutils:netherite_burnisher"
+    }
+  },
+  "result": {
+    "id": "scalarrpgutils:emerald_level_3",
+    "count": 1
+  }
+}

@@ -1,25 +1,21 @@
+# Scalar RPG Utilities
 
-Installation information
-=======
+The RPG focused spin-off of Scalar Utils for Minecraft 1.21.1
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+Inspired by [RPG Inventory for 1.7.10](https://github.com/AbsolemJackdaw/rpginventory) and [RPG Inventory for 1.12.2](https://github.com/AbsolemJackdaw/Rpg-Inventory-2016).
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
-
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
-
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
-
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+## Features
+- Curios Items:
+  - Gloves: (1 Per Player) Applies 1 buff dependent on the glove type.
+  - Rings: (2 Per Player) Applies 1 buff dependent on the ring type.
+  - Necklace: (1 Per Player) Applies 1 buff dependent on the necklace type.
+- Items:
+  - Burnisher: A tool used to shape raw gems into usable forms (higher tier Burnishers produce higher quality gems).
+  - Tier 1-4 Gems: Used in crafting various Curios items
+    - Diamond (Health Regeneration Boost)
+    - Gold (Speed Boost)
+    - Lapis Lazuli (Strength Boost)
+    - Emerald (Various Buffs)
+      - Nullifies Negative Potion Effects
+      - Haste Boost
+      - Resistance Boost

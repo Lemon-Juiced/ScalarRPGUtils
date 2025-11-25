@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "scalarrpgutils:diamond_ring_level_1",
+    "scalarrpgutils:diamond_ring_level_2",
+    "scalarrpgutils:diamond_ring_level_3",
+    "scalarrpgutils:emerald_ring_level_1",
+    "scalarrpgutils:emerald_ring_level_2",
+    "scalarrpgutils:emerald_ring_level_3",
+    "scalarrpgutils:gold_ring_level_1",
+    "scalarrpgutils:gold_ring_level_2",
+    "scalarrpgutils:gold_ring_level_3",
+    "scalarrpgutils:lapis_lazuli_ring_level_1",
+    "scalarrpgutils:lapis_lazuli_ring_level_2",
+    "scalarrpgutils:lapis_lazuli_ring_level_3"
+    ]
+}
