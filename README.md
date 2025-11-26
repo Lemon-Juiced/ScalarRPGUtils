@@ -11,8 +11,8 @@ Inspired by RPG Inventory (older versions) and built as a small mod extension th
 - Rings (2 per player): grant a single buff depending on ring material and the material's tier.
 
 ### Items and crafting materials
-- Burnisher: a tool used to shape raw gems into usable forms. Higher-tier Burnishers produce higher-quality gems.
-- Tier 1–3 Gems (used in crafting Curios items):
+- Burnisher: a tool used to shape raw resources into usable forms (called components). Higher-tier Burnishers produce higher-quality gems.
+- Tier 1–3 Components (used in crafting Curios items):
   - Diamond: Regeneration buff
   - Emerald: Various buffs 
     - Nullifies negative potion effects
