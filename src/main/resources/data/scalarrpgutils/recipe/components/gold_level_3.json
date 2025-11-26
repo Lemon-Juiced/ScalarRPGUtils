@@ -1,17 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "#",
-    "/"
-  ],
-  "key": {
-    "#": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "minecraft:gold_ingot"
     },
-    "/": {
+    {
       "item": "scalarrpgutils:netherite_burnisher"
     }
-  },
+  ],
   "result": {
     "id": "scalarrpgutils:gold_level_3",
     "count": 1
