@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "gg ",
+    "g#g",
+    " gg"
+  ],
+  "key": {
+    "#": {
+      "item": "scalarrpgutils:emerald_level_1"
+    },
+    "g": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "id": "scalarrpgutils:emerald_gloves_level_1",
+    "count": 1
+  }
+}
