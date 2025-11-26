@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "scalarrpgutils:diamond_gloves_level_1",
+    "scalarrpgutils:diamond_gloves_level_2",
+    "scalarrpgutils:diamond_gloves_level_3",
+    "scalarrpgutils:emerald_gloves_level_1",
+    "scalarrpgutils:emerald_gloves_level_2",
+    "scalarrpgutils:emerald_gloves_level_3",
+    "scalarrpgutils:gold_gloves_level_1",
+    "scalarrpgutils:gold_gloves_level_2",
+    "scalarrpgutils:gold_gloves_level_3",
+    "scalarrpgutils:lapis_lazuli_gloves_level_1",
+    "scalarrpgutils:lapis_lazuli_gloves_level_2",
+    "scalarrpgutils:lapis_lazuli_gloves_level_3"
+    ]
+}

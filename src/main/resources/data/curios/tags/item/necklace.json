@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "scalarrpgutils:diamond_necklace_level_1",
+    "scalarrpgutils:diamond_necklace_level_2",
+    "scalarrpgutils:diamond_necklace_level_3",
+    "scalarrpgutils:emerald_necklace_level_1",
+    "scalarrpgutils:emerald_necklace_level_2",
+    "scalarrpgutils:emerald_necklace_level_3",
+    "scalarrpgutils:gold_necklace_level_1",
+    "scalarrpgutils:gold_necklace_level_2",
+    "scalarrpgutils:gold_necklace_level_3",
+    "scalarrpgutils:lapis_lazuli_necklace_level_1",
+    "scalarrpgutils:lapis_lazuli_necklace_level_2",
+    "scalarrpgutils:lapis_lazuli_necklace_level_3"
+    ]
+}

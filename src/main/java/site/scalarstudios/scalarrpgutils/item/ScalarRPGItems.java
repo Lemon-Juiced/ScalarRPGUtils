@@ -31,7 +31,35 @@ public class ScalarRPGItems {
     public static final Supplier<Item> LAPIS_LAZULI_LEVEL_2 = ITEMS.register("lapis_lazuli_level_2", () -> new Item(new Item.Properties()));
     public static final Supplier<Item> LAPIS_LAZULI_LEVEL_3 = ITEMS.register("lapis_lazuli_level_3", () -> new Item(new Item.Properties()));
 
-    // Rings: register each ring as an AbstractCurioItem via DeferredRegister
+    // Gloves
+    public static final Supplier<Item> DIAMOND_GLOVES_LEVEL_1 = ITEMS.register("diamond_gloves_level_1", () -> new AbstractCurioItem("diamond", 1));
+    public static final Supplier<Item> DIAMOND_GLOVES_LEVEL_2 = ITEMS.register("diamond_gloves_level_2", () -> new AbstractCurioItem("diamond", 2));
+    public static final Supplier<Item> DIAMOND_GLOVES_LEVEL_3 = ITEMS.register("diamond_gloves_level_3", () -> new AbstractCurioItem("diamond", 3));
+    public static final Supplier<Item> EMERALD_GLOVES_LEVEL_1 = ITEMS.register("emerald_gloves_level_1", () -> new AbstractCurioItem("emerald", 1));
+    public static final Supplier<Item> EMERALD_GLOVES_LEVEL_2 = ITEMS.register("emerald_gloves_level_2", () -> new AbstractCurioItem("emerald", 2));
+    public static final Supplier<Item> EMERALD_GLOVES_LEVEL_3 = ITEMS.register("emerald_gloves_level_3", () -> new AbstractCurioItem("emerald", 3));
+    public static final Supplier<Item> GOLD_GLOVES_LEVEL_1 = ITEMS.register("gold_gloves_level_1", () -> new AbstractCurioItem("gold", 1));
+    public static final Supplier<Item> GOLD_GLOVES_LEVEL_2 = ITEMS.register("gold_gloves_level_2", () -> new AbstractCurioItem("gold", 2));
+    public static final Supplier<Item> GOLD_GLOVES_LEVEL_3 = ITEMS.register("gold_gloves_level_3", () -> new AbstractCurioItem("gold", 3));
+    public static final Supplier<Item> LAPIS_LAZULI_GLOVES_LEVEL_1 = ITEMS.register("lapis_lazuli_gloves_level_1", () -> new AbstractCurioItem("lapis_lazuli", 1));
+    public static final Supplier<Item> LAPIS_LAZULI_GLOVES_LEVEL_2 = ITEMS.register("lapis_lazuli_gloves_level_2", () -> new AbstractCurioItem("lapis_lazuli", 2));
+    public static final Supplier<Item> LAPIS_LAZULI_GLOVES_LEVEL_3 = ITEMS.register("lapis_lazuli_gloves_level_3", () -> new AbstractCurioItem("lapis_lazuli", 3));
+
+    // Necklaces
+    public static final Supplier<Item> DIAMOND_NECKLACE_LEVEL_1 = ITEMS.register("diamond_necklace_level_1", () -> new AbstractCurioItem("diamond", 1));
+    public static final Supplier<Item> DIAMOND_NECKLACE_LEVEL_2 = ITEMS.register("diamond_necklace_level_2", () -> new AbstractCurioItem("diamond", 2));
+    public static final Supplier<Item> DIAMOND_NECKLACE_LEVEL_3 = ITEMS.register("diamond_necklace_level_3", () -> new AbstractCurioItem("diamond", 3));
+    public static final Supplier<Item> EMERALD_NECKLACE_LEVEL_1 = ITEMS.register("emerald_necklace_level_1", () -> new AbstractCurioItem("emerald", 1));
+    public static final Supplier<Item> EMERALD_NECKLACE_LEVEL_2 = ITEMS.register("emerald_necklace_level_2", () -> new AbstractCurioItem("emerald", 2));
+    public static final Supplier<Item> EMERALD_NECKLACE_LEVEL_3 = ITEMS.register("emerald_necklace_level_3", () -> new AbstractCurioItem("emerald", 3));
+    public static final Supplier<Item> GOLD_NECKLACE_LEVEL_1 = ITEMS.register("gold_necklace_level_1", () -> new AbstractCurioItem("gold", 1));
+    public static final Supplier<Item> GOLD_NECKLACE_LEVEL_2 = ITEMS.register("gold_necklace_level_2", () -> new AbstractCurioItem("gold", 2));
+    public static final Supplier<Item> GOLD_NECKLACE_LEVEL_3 = ITEMS.register("gold_necklace_level_3", () -> new AbstractCurioItem("gold", 3));
+    public static final Supplier<Item> LAPIS_LAZULI_NECKLACE_LEVEL_1 = ITEMS.register("lapis_lazuli_necklace_level_1", () -> new AbstractCurioItem("lapis_lazuli", 1));
+    public static final Supplier<Item> LAPIS_LAZULI_NECKLACE_LEVEL_2 = ITEMS.register("lapis_lazuli_necklace_level_2", () -> new AbstractCurioItem("lapis_lazuli", 2));
+    public static final Supplier<Item> LAPIS_LAZULI_NECKLACE_LEVEL_3 = ITEMS.register("lapis_lazuli_necklace_level_3", () -> new AbstractCurioItem("lapis_lazuli", 3));
+
+    // Rings
     public static final Supplier<Item> DIAMOND_RING_LEVEL_1 = ITEMS.register("diamond_ring_level_1", () -> new AbstractCurioItem("diamond", 1));
     public static final Supplier<Item> DIAMOND_RING_LEVEL_2 = ITEMS.register("diamond_ring_level_2", () -> new AbstractCurioItem("diamond", 2));
     public static final Supplier<Item> DIAMOND_RING_LEVEL_3 = ITEMS.register("diamond_ring_level_3", () -> new AbstractCurioItem("diamond", 3));
@@ -44,8 +72,6 @@ public class ScalarRPGItems {
     public static final Supplier<Item> LAPIS_LAZULI_RING_LEVEL_1 = ITEMS.register("lapis_lazuli_ring_level_1", () -> new AbstractCurioItem("lapis_lazuli", 1));
     public static final Supplier<Item> LAPIS_LAZULI_RING_LEVEL_2 = ITEMS.register("lapis_lazuli_ring_level_2", () -> new AbstractCurioItem("lapis_lazuli", 2));
     public static final Supplier<Item> LAPIS_LAZULI_RING_LEVEL_3 = ITEMS.register("lapis_lazuli_ring_level_3", () -> new AbstractCurioItem("lapis_lazuli", 3));
-
-    // No plain Item fields — consumers should use the Supplier.get() when they need the registered Item instance.
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -47,6 +47,34 @@ public class ScalarRPGCreativeTabs {
             event.accept(ScalarRPGItems.LAPIS_LAZULI_LEVEL_2.get());
             event.accept(ScalarRPGItems.LAPIS_LAZULI_LEVEL_3.get());
         } else if (event.getTab() == SCALAR_RPG_CURIOS_TAB.get()) {
+            // Gloves
+            event.accept(ScalarRPGItems.DIAMOND_GLOVES_LEVEL_1.get());
+            event.accept(ScalarRPGItems.DIAMOND_GLOVES_LEVEL_2.get());
+            event.accept(ScalarRPGItems.DIAMOND_GLOVES_LEVEL_3.get());
+            event.accept(ScalarRPGItems.EMERALD_GLOVES_LEVEL_1.get());
+            event.accept(ScalarRPGItems.EMERALD_GLOVES_LEVEL_2.get());
+            event.accept(ScalarRPGItems.EMERALD_GLOVES_LEVEL_3.get());
+            event.accept(ScalarRPGItems.GOLD_GLOVES_LEVEL_1.get());
+            event.accept(ScalarRPGItems.GOLD_GLOVES_LEVEL_2.get());
+            event.accept(ScalarRPGItems.GOLD_GLOVES_LEVEL_3.get());
+            event.accept(ScalarRPGItems.LAPIS_LAZULI_GLOVES_LEVEL_1.get());
+            event.accept(ScalarRPGItems.LAPIS_LAZULI_GLOVES_LEVEL_2.get());
+            event.accept(ScalarRPGItems.LAPIS_LAZULI_GLOVES_LEVEL_3.get());
+
+            // Necklaces
+            event.accept(ScalarRPGItems.DIAMOND_NECKLACE_LEVEL_1.get());
+            event.accept(ScalarRPGItems.DIAMOND_NECKLACE_LEVEL_2.get());
+            event.accept(ScalarRPGItems.DIAMOND_NECKLACE_LEVEL_3.get());
+            event.accept(ScalarRPGItems.EMERALD_NECKLACE_LEVEL_1.get());
+            event.accept(ScalarRPGItems.EMERALD_NECKLACE_LEVEL_2.get());
+            event.accept(ScalarRPGItems.EMERALD_NECKLACE_LEVEL_3.get());
+            event.accept(ScalarRPGItems.GOLD_NECKLACE_LEVEL_1.get());
+            event.accept(ScalarRPGItems.GOLD_NECKLACE_LEVEL_2.get());
+            event.accept(ScalarRPGItems.GOLD_NECKLACE_LEVEL_3.get());
+            event.accept(ScalarRPGItems.LAPIS_LAZULI_NECKLACE_LEVEL_1.get());
+            event.accept(ScalarRPGItems.LAPIS_LAZULI_NECKLACE_LEVEL_2.get());
+            event.accept(ScalarRPGItems.LAPIS_LAZULI_NECKLACE_LEVEL_3.get());
+
             // Rings
             event.accept(ScalarRPGItems.DIAMOND_RING_LEVEL_1.get());
             event.accept(ScalarRPGItems.DIAMOND_RING_LEVEL_2.get());
