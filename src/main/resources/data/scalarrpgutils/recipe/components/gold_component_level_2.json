@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "minecraft:lapis_lazuli"
+      "item": "minecraft:gold_ingot"
     },
     {
       "item": "scalarrpgutils:diamond_burnisher"
     }
   ],
   "result": {
-    "id": "scalarrpgutils:lapis_lazuli_level_2",
+    "id": "scalarrpgutils:gold_component_level_2",
     "count": 1
   }
 }

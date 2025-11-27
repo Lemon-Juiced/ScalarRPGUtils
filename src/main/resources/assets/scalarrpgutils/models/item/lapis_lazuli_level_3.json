@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "scalarrpgutils:item/lapis_lazuli_level_3"
-  }
-}

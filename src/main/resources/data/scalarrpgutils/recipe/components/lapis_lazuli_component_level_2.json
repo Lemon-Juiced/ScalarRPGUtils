@@ -5,11 +5,11 @@
       "item": "minecraft:lapis_lazuli"
     },
     {
-      "item": "scalarrpgutils:netherite_burnisher"
+      "item": "scalarrpgutils:diamond_burnisher"
     }
   ],
   "result": {
-    "id": "scalarrpgutils:lapis_lazuli_level_3",
+    "id": "scalarrpgutils:lapis_lazuli_component_level_2",
     "count": 1
   }
 }

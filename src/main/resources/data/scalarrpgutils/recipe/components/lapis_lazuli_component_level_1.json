@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "minecraft:diamond"
+      "item": "minecraft:lapis_lazuli"
     },
     {
       "item": "scalarrpgutils:iron_burnisher"
     }
   ],
   "result": {
-    "id": "scalarrpgutils:diamond_level_1",
+    "id": "scalarrpgutils:lapis_lazuli_component_level_1",
     "count": 1
   }
 }

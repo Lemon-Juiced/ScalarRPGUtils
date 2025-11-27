@@ -61,18 +61,26 @@ public class AbstractCurioItem extends Item implements ICurioItem {
         Holder<net.minecraft.world.effect.MobEffect> effectToApply = null;
 
         switch (key) {
+            case "copper":
+                effectToApply = MobEffects.WATER_BREATHING;
+                break;
             case "diamond":
                 effectToApply = MobEffects.REGENERATION;
+                break;
+            case "emerald":
+                // Emerald does multiple things — handled below
                 break;
             case "gold":
                 effectToApply = MobEffects.MOVEMENT_SPEED;
                 break;
-            case "lapis":
             case "lapis_lazuli":
                 effectToApply = MobEffects.DAMAGE_BOOST;
                 break;
-            case "emerald":
-                // Emerald does multiple things — handled below
+            case "netherite":
+                // Netherite does multiple things — handled below
+                break;
+            case "redstone_crystal":
+                effectToApply = MobEffects.DIG_SPEED;
                 break;
         }
 
@@ -112,7 +120,8 @@ public class AbstractCurioItem extends Item implements ICurioItem {
     private void ensureEffectAtOrAbove(Player player, Holder<net.minecraft.world.effect.MobEffect> effectHolder, int targetAmplifier) {
         MobEffectInstance current = player.getEffect(effectHolder);
         if (current == null || current.getAmplifier() < targetAmplifier) {
-            int durationTicks = 20; // Refresh every tick (1 second duration)
+            int ticksPerSecond = 20;
+            int durationTicks = 5 * ticksPerSecond; // Make duration 5 seconds, this reduces flickering in inventory
             boolean ambient = false;
             // Intended false, true for debug
             boolean showParticles = false;

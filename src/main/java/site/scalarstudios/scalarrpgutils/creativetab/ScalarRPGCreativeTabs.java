@@ -34,18 +34,18 @@ public class ScalarRPGCreativeTabs {
             event.accept(ScalarRPGItems.NETHERITE_BURNISHER.get());
 
             // Tiered Components
-            event.accept(ScalarRPGItems.DIAMOND_LEVEL_1.get());
-            event.accept(ScalarRPGItems.DIAMOND_LEVEL_2.get());
-            event.accept(ScalarRPGItems.DIAMOND_LEVEL_3.get());
-            event.accept(ScalarRPGItems.EMERALD_LEVEL_1.get());
-            event.accept(ScalarRPGItems.EMERALD_LEVEL_2.get());
-            event.accept(ScalarRPGItems.EMERALD_LEVEL_3.get());
-            event.accept(ScalarRPGItems.GOLD_LEVEL_1.get());
-            event.accept(ScalarRPGItems.GOLD_LEVEL_2.get());
-            event.accept(ScalarRPGItems.GOLD_LEVEL_3.get());
-            event.accept(ScalarRPGItems.LAPIS_LAZULI_LEVEL_1.get());
-            event.accept(ScalarRPGItems.LAPIS_LAZULI_LEVEL_2.get());
-            event.accept(ScalarRPGItems.LAPIS_LAZULI_LEVEL_3.get());
+            event.accept(ScalarRPGItems.DIAMOND_COMPONENT_LEVEL_1.get());
+            event.accept(ScalarRPGItems.DIAMOND_COMPONENT_LEVEL_2.get());
+            event.accept(ScalarRPGItems.DIAMOND_COMPONENT_LEVEL_3.get());
+            event.accept(ScalarRPGItems.EMERALD_COMPONENT_LEVEL_1.get());
+            event.accept(ScalarRPGItems.EMERALD_COMPONENT_LEVEL_2.get());
+            event.accept(ScalarRPGItems.EMERALD_COMPONENT_LEVEL_3.get());
+            event.accept(ScalarRPGItems.GOLD_COMPONENT_LEVEL_1.get());
+            event.accept(ScalarRPGItems.GOLD_COMPONENT_LEVEL_2.get());
+            event.accept(ScalarRPGItems.GOLD_COMPONENT_LEVEL_3.get());
+            event.accept(ScalarRPGItems.LAPIS_LAZULI_COMPONENT_LEVEL_1.get());
+            event.accept(ScalarRPGItems.LAPIS_LAZULI_COMPONENT_LEVEL_2.get());
+            event.accept(ScalarRPGItems.LAPIS_LAZULI_COMPONENT_LEVEL_3.get());
         } else if (event.getTab() == SCALAR_RPG_CURIOS_TAB.get()) {
             // Gloves
             event.accept(ScalarRPGItems.DIAMOND_GLOVES_LEVEL_1.get());

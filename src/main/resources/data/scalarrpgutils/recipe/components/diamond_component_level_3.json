@@ -5,11 +5,11 @@
       "item": "minecraft:diamond"
     },
     {
-      "item": "scalarrpgutils:diamond_burnisher"
+      "item": "scalarrpgutils:netherite_burnisher"
     }
   ],
   "result": {
-    "id": "scalarrpgutils:diamond_level_2",
+    "id": "scalarrpgutils:diamond_component_level_3",
     "count": 1
   }
 }

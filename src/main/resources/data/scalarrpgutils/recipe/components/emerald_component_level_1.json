@@ -5,11 +5,11 @@
       "item": "minecraft:emerald"
     },
     {
-      "item": "scalarrpgutils:netherite_burnisher"
+      "item": "scalarrpgutils:iron_burnisher"
     }
   ],
   "result": {
-    "id": "scalarrpgutils:emerald_level_3",
+    "id": "scalarrpgutils:emerald_component_level_1",
     "count": 1
   }
 }

@@ -5,11 +5,11 @@
       "item": "minecraft:gold_ingot"
     },
     {
-      "item": "scalarrpgutils:iron_burnisher"
+      "item": "scalarrpgutils:netherite_burnisher"
     }
   ],
   "result": {
-    "id": "scalarrpgutils:gold_level_1",
+    "id": "scalarrpgutils:gold_component_level_3",
     "count": 1
   }
 }

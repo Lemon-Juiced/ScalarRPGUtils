@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "minecraft:gold_ingot"
+      "item": "minecraft:emerald"
     },
     {
       "item": "scalarrpgutils:diamond_burnisher"
     }
   ],
   "result": {
-    "id": "scalarrpgutils:gold_level_2",
+    "id": "scalarrpgutils:emerald_component_level_2",
     "count": 1
   }
 }
