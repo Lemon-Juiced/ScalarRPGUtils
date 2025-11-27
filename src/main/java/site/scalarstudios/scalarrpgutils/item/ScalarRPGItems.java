@@ -19,6 +19,9 @@ public class ScalarRPGItems {
     public static final Supplier<Item> NETHERITE_BURNISHER = ITEMS.register("netherite_burnisher", () -> new BurnisherItem(new Item.Properties(), "netherite"));
 
     // Components
+    public static final Supplier<Item> COPPER_COMPONENT_LEVEL_1 = ITEMS.register("copper_component_level_1", () -> new ComponentItem(1));
+    public static final Supplier<Item> COPPER_COMPONENT_LEVEL_2 = ITEMS.register("copper_component_level_1", () -> new ComponentItem(2));
+    public static final Supplier<Item> COPPER_COMPONENT_LEVEL_3 = ITEMS.register("copper_component_level_1", () -> new ComponentItem(3));
     public static final Supplier<Item> DIAMOND_COMPONENT_LEVEL_1 = ITEMS.register("diamond_component_level_1", () -> new ComponentItem(1));
     public static final Supplier<Item> DIAMOND_COMPONENT_LEVEL_2 = ITEMS.register("diamond_component_level_2", () -> new ComponentItem(2));
     public static final Supplier<Item> DIAMOND_COMPONENT_LEVEL_3 = ITEMS.register("diamond_component_level_3", () -> new ComponentItem(3));
@@ -31,6 +34,12 @@ public class ScalarRPGItems {
     public static final Supplier<Item> LAPIS_LAZULI_COMPONENT_LEVEL_1 = ITEMS.register("lapis_lazuli_component_level_1", () -> new ComponentItem(1));
     public static final Supplier<Item> LAPIS_LAZULI_COMPONENT_LEVEL_2 = ITEMS.register("lapis_lazuli_component_level_2", () -> new ComponentItem(2));
     public static final Supplier<Item> LAPIS_LAZULI_COMPONENT_LEVEL_3 = ITEMS.register("lapis_lazuli_component_level_3", () -> new ComponentItem(3));
+    public static final Supplier<Item> NETHERITE_COMPONENT_LEVEL_1 = ITEMS.register("netherite_component_level_1", () -> new ComponentItem(1));
+    public static final Supplier<Item> NETHERITE_COMPONENT_LEVEL_2 = ITEMS.register("netherite_component_level_2", () -> new ComponentItem(2));
+    public static final Supplier<Item> NETHERITE_COMPONENT_LEVEL_3 = ITEMS.register("netherite_component_level_3", () -> new ComponentItem(3));
+    public static final Supplier<Item> REDSTONE_CRYSTAL_COMPONENT_LEVEL_1 = ITEMS.register("redstone_crystal_component_level_1", () -> new ComponentItem(1));
+    public static final Supplier<Item> REDSTONE_CRYSTAL_COMPONENT_LEVEL_2 = ITEMS.register("redstone_crystal_component_level_2", () -> new ComponentItem(2));
+    public static final Supplier<Item> REDSTONE_CRYSTAL_COMPONENT_LEVEL_3 = ITEMS.register("redstone_crystal_component_level_3", () -> new ComponentItem(3));
 
     // Gloves
     public static final Supplier<Item> DIAMOND_GLOVES_LEVEL_1 = ITEMS.register("diamond_gloves_level_1", () -> new AbstractCurioItem("diamond", 1));

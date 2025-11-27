@@ -34,6 +34,9 @@ public class ScalarRPGCreativeTabs {
             event.accept(ScalarRPGItems.NETHERITE_BURNISHER.get());
 
             // Tiered Components
+            event.accept(ScalarRPGItems.COPPER_COMPONENT_LEVEL_1.get());
+            event.accept(ScalarRPGItems.COPPER_COMPONENT_LEVEL_2.get());
+            event.accept(ScalarRPGItems.COPPER_COMPONENT_LEVEL_3.get());
             event.accept(ScalarRPGItems.DIAMOND_COMPONENT_LEVEL_1.get());
             event.accept(ScalarRPGItems.DIAMOND_COMPONENT_LEVEL_2.get());
             event.accept(ScalarRPGItems.DIAMOND_COMPONENT_LEVEL_3.get());
@@ -46,6 +49,13 @@ public class ScalarRPGCreativeTabs {
             event.accept(ScalarRPGItems.LAPIS_LAZULI_COMPONENT_LEVEL_1.get());
             event.accept(ScalarRPGItems.LAPIS_LAZULI_COMPONENT_LEVEL_2.get());
             event.accept(ScalarRPGItems.LAPIS_LAZULI_COMPONENT_LEVEL_3.get());
+            event.accept(ScalarRPGItems.NETHERITE_COMPONENT_LEVEL_1.get());
+            event.accept(ScalarRPGItems.NETHERITE_COMPONENT_LEVEL_2.get());
+            event.accept(ScalarRPGItems.NETHERITE_COMPONENT_LEVEL_3.get());
+            event.accept(ScalarRPGItems.REDSTONE_CRYSTAL_COMPONENT_LEVEL_1.get());
+            event.accept(ScalarRPGItems.REDSTONE_CRYSTAL_COMPONENT_LEVEL_2.get());
+            event.accept(ScalarRPGItems.REDSTONE_CRYSTAL_COMPONENT_LEVEL_3.get());
+
         } else if (event.getTab() == SCALAR_RPG_CURIOS_TAB.get()) {
             // Gloves
             event.accept(ScalarRPGItems.DIAMOND_GLOVES_LEVEL_1.get());

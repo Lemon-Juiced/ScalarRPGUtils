@@ -6,6 +6,9 @@
   "item.scalarrpgutils.diamond_burnisher": "Diamond Burnisher",
   "item.scalarrpgutils.netherite_burnisher": "Netherite Burnisher",
 
+  "item.scalarrpgutils.copper_component_level_1": "Copper Component",
+  "item.scalarrpgutils.copper_component_level_2": "Copper Component",
+  "item.scalarrpgutils.copper_component_level_3": "Copper Component",
   "item.scalarrpgutils.diamond_component_level_1": "Diamond Component",
   "item.scalarrpgutils.diamond_component_level_2": "Diamond Component",
   "item.scalarrpgutils.diamond_component_level_3": "Diamond Component",
@@ -18,6 +21,12 @@
   "item.scalarrpgutils.lapis_lazuli_component_level_1": "Lapis Lazuli Component",
   "item.scalarrpgutils.lapis_lazuli_component_level_2": "Lapis Lazuli Component",
   "item.scalarrpgutils.lapis_lazuli_component_level_3": "Lapis Lazuli Component",
+  "item.scalarrpgutils.netherite_component_level_1": "Netherite Component",
+  "item.scalarrpgutils.netherite_component_level_2": "Netherite Component",
+  "item.scalarrpgutils.netherite_component_level_3": "Netherite Component",
+  "item.scalarrpgutils.redstone_crystal_component_level_1": "Redstone Crystal Component",
+  "item.scalarrpgutils.redstone_crystal_component_level_2": "Redstone Crystal Component",
+  "item.scalarrpgutils.redstone_crystal_component_level_3": "Redstone Crystal Component",
 
   "item.scalarrpgutils.diamond_gloves_level_1": "Diamond Gloves Level 1",
   "item.scalarrpgutils.diamond_gloves_level_2": "Diamond Gloves Level 2",
