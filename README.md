@@ -15,13 +15,19 @@ Inspired by [RPG Inventory](https://github.com/AbsolemJackdaw/Rpg-Inventory-2016
 ### Items and Crafting Materials
 - Burnisher: a tool used to shape raw resources into usable forms (called components). Higher-tier Burnishers produce higher-quality gems.
 - Tier 1–3 Components (used in crafting Curios items):
+  - Copper: Water Breathing buff
   - Diamond: Regeneration buff
-  - Emerald: Various buffs 
+  - Emerald: 
     - Nullifies negative potion effects
-    - Haste buff
-    - Resistance buff
+    - Absorption
   - Gold: Swiftness buff
   - Lapis Lazuli: Strength buff
+  - Netherite: 
+    - Fire Resistance
+    - Strength
+    - Extinguish fire on wearer
+  - Quartz: Jump Boost buff
+  - Redstone (Crystal): Haste buff
 
 ## Contributing
 Small contributions, bug reports, and PRs are welcome. Please open issues for discussion before implementing large changes.

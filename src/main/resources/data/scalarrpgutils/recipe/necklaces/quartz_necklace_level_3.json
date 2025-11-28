@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ss ",
+    "sg ",
+    "  #"
+  ],
+  "key": {
+    "#": {
+      "item": "scalarrpgutils:quartz_component_level_3"
+    },
+    "s": {
+      "item": "minecraft:string"
+    },
+    "g": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "id": "scalarrpgutils:quartz_necklace_level_3",
+    "count": 1
+  }
+}

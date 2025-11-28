@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "scalarrpgutils:copper_necklace_level_1",
+    "scalarrpgutils:copper_necklace_level_2",
+    "scalarrpgutils:copper_necklace_level_3",
     "scalarrpgutils:diamond_necklace_level_1",
     "scalarrpgutils:diamond_necklace_level_2",
     "scalarrpgutils:diamond_necklace_level_3",
@@ -12,6 +15,15 @@
     "scalarrpgutils:gold_necklace_level_3",
     "scalarrpgutils:lapis_lazuli_necklace_level_1",
     "scalarrpgutils:lapis_lazuli_necklace_level_2",
-    "scalarrpgutils:lapis_lazuli_necklace_level_3"
-    ]
+    "scalarrpgutils:lapis_lazuli_necklace_level_3",
+    "scalarrpgutils:netherite_necklace_level_1",
+    "scalarrpgutils:netherite_necklace_level_2",
+    "scalarrpgutils:netherite_necklace_level_3",
+    "scalarrpgutils:quartz_necklace_level_1",
+    "scalarrpgutils:quartz_necklace_level_2",
+    "scalarrpgutils:quartz_necklace_level_3",
+    "scalarrpgutils:redstone_crystal_necklace_level_1",
+    "scalarrpgutils:redstone_crystal_necklace_level_2",
+    "scalarrpgutils:redstone_crystal_necklace_level_3"
+  ]
 }

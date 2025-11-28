@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "gg ",
+    "g#g",
+    " gg"
+  ],
+  "key": {
+    "#": {
+      "item": "scalarrpgutils:redstone_crystal_component_level_2"
+    },
+    "g": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "id": "scalarrpgutils:redstone_crystal_gloves_level_2",
+    "count": 1
+  }
+}

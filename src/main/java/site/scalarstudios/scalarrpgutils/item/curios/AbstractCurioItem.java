@@ -39,10 +39,14 @@ public class AbstractCurioItem extends Item implements ICurioItem {
      * If the player has the buff, upgrade it to the correct level.
      *
      * Different resources map to different effects:
+     * - "copper" -> Water Breathing and Dolphin's Grace while swimming
      * - "diamond" -> Regeneration
+     * - "emerald" -> Absorption + remove negative effects
      * - "gold" -> Speed (Movement Speed)
      * - "lapis" / "lapis_lazuli" -> Strength (Damage Boost)
-     * - "emerald" -> Various: remove negative effects, extinguish fire, apply Haste and Resistance
+     * - "netherite" -> Fire Resistance & Strength + extinguish fire
+     * - "quartz" -> Jump Boost
+     * - "redstone_crystal" -> Haste
      *
      * The buff is refreshed while the Curio is worn.
      *
@@ -58,32 +62,43 @@ public class AbstractCurioItem extends Item implements ICurioItem {
         Player player = (Player) entity;
 
         String key = resource == null ? "" : resource.toLowerCase();
-        Holder<net.minecraft.world.effect.MobEffect> effectToApply = null;
+        Holder<net.minecraft.world.effect.MobEffect> effectToApply1 = null;
+        Holder<net.minecraft.world.effect.MobEffect> effectToApply2 = null;
 
         switch (key) {
             case "copper":
-                effectToApply = MobEffects.WATER_BREATHING;
+                effectToApply1 = MobEffects.WATER_BREATHING;
                 break;
             case "diamond":
-                effectToApply = MobEffects.REGENERATION;
+                effectToApply1 = MobEffects.REGENERATION;
                 break;
             case "emerald":
-                // Emerald does multiple things — handled below
+                effectToApply1 = MobEffects.ABSORPTION;
                 break;
             case "gold":
-                effectToApply = MobEffects.MOVEMENT_SPEED;
+                effectToApply1 = MobEffects.MOVEMENT_SPEED;
                 break;
             case "lapis_lazuli":
-                effectToApply = MobEffects.DAMAGE_BOOST;
+                effectToApply1 = MobEffects.DAMAGE_BOOST;
                 break;
             case "netherite":
-                // Netherite does multiple things — handled below
+                effectToApply1 = MobEffects.FIRE_RESISTANCE;
+                effectToApply2 = MobEffects.DAMAGE_BOOST;
+                break;
+            case "quartz":
+                effectToApply1 = MobEffects.JUMP;
                 break;
             case "redstone_crystal":
-                effectToApply = MobEffects.DIG_SPEED;
+                effectToApply1 = MobEffects.DIG_SPEED;
                 break;
         }
 
+        // Additional Checks for specific resources
+        if ("copper".equals(key)) {
+            if (player.isSwimming()){
+                effectToApply2 = MobEffects.DOLPHINS_GRACE;
+            }
+        }
         if ("emerald".equals(key)) {
             // Remove any effect classified as harmful
             for (MobEffectInstance effectInstance : player.getActiveEffects()) {
@@ -92,19 +107,22 @@ public class AbstractCurioItem extends Item implements ICurioItem {
                     player.removeEffect(holder);
                 }
             }
-
+        } else if ("netherite".equals(key)) {
             // Clear Fire
             if (player.isOnFire()) {
                 player.extinguishFire();
             }
 
-            // Apply Haste and Resistance at the desired level
-            int targetAmplifier = Math.max(0, level - 1);
-            ensureEffectAtOrAbove(player, MobEffects.DIG_SPEED, targetAmplifier);
-            ensureEffectAtOrAbove(player, MobEffects.DAMAGE_RESISTANCE, targetAmplifier);
-        } else if (effectToApply != null) {
+        }
+
+        if (effectToApply1 != null) {
             int targetAmplifier = Math.max(0, level - 1); // Convert human level to zero-based amplifier
-            ensureEffectAtOrAbove(player, effectToApply, targetAmplifier);
+            ensureEffectAtOrAbove(player, effectToApply1, targetAmplifier);
+        }
+
+        if (effectToApply2 != null) {
+            int targetAmplifier = Math.max(0, level - 1); // Convert human level to zero-based amplifier
+            ensureEffectAtOrAbove(player, effectToApply2, targetAmplifier);
         }
 
         ICurioItem.super.curioTick(slotContext, stack);

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:redstone_block"
+    },
+    {
+      "item": "scalarrpgutils:netherite_burnisher"
+    }
+  ],
+  "result": {
+    "id": "scalarrpgutils:redstone_crystal_component_level_3",
+    "count": 1
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:quartz"
+    },
+    {
+      "item": "scalarrpgutils:netherite_burnisher"
+    }
+  ],
+  "result": {
+    "id": "scalarrpgutils:quartz_component_level_3",
+    "count": 1
+  }
+}

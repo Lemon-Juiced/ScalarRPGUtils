@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ss ",
+    "sg ",
+    "  #"
+  ],
+  "key": {
+    "#": {
+      "item": "scalarrpgutils:redstone_crystal_component_level_1"
+    },
+    "s": {
+      "item": "minecraft:string"
+    },
+    "g": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "id": "scalarrpgutils:redstone_crystal_necklace_level_1",
+    "count": 1
+  }
+}

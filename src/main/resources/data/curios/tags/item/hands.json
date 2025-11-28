@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "scalarrpgutils:copper_gloves_level_1",
+    "scalarrpgutils:copper_gloves_level_2",
+    "scalarrpgutils:copper_gloves_level_3",
     "scalarrpgutils:diamond_gloves_level_1",
     "scalarrpgutils:diamond_gloves_level_2",
     "scalarrpgutils:diamond_gloves_level_3",
@@ -12,6 +15,15 @@
     "scalarrpgutils:gold_gloves_level_3",
     "scalarrpgutils:lapis_lazuli_gloves_level_1",
     "scalarrpgutils:lapis_lazuli_gloves_level_2",
-    "scalarrpgutils:lapis_lazuli_gloves_level_3"
+    "scalarrpgutils:lapis_lazuli_gloves_level_3",
+    "scalarrpgutils:netherite_gloves_level_1",
+    "scalarrpgutils:netherite_gloves_level_2",
+    "scalarrpgutils:netherite_gloves_level_3",
+    "scalarrpgutils:quartz_gloves_level_1",
+    "scalarrpgutils:quartz_gloves_level_2",
+    "scalarrpgutils:quartz_gloves_level_3",
+    "scalarrpgutils:redstone_crystal_gloves_level_1",
+    "scalarrpgutils:redstone_crystal_gloves_level_2",
+    "scalarrpgutils:redstone_crystal_gloves_level_3"
     ]
 }
