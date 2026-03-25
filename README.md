@@ -1,6 +1,5 @@
 # Scalar RPG Utilities
-
-A lightweight RPG-focused spin-off of Scalar Utils for Minecraft 1.21.1.
+A lightweight RPG-focused spin-off of Scalar Utils for Minecraft 26.1+
 
 Inspired by [RPG Inventory](https://github.com/AbsolemJackdaw/Rpg-Inventory-2016) (older versions) and built as a small mod extension that provides Curios-based wearable items and crafting materials to add RPG-style buffs to players.
 
