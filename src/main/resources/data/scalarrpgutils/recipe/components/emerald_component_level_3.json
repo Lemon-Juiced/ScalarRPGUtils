@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "minecraft:emerald"
-    },
-    {
-      "item": "scalarrpgutils:netherite_burnisher"
-    }
+    "minecraft:emerald",
+    "scalarrpgutils:netherite_burnisher"
   ],
   "result": {
     "id": "scalarrpgutils:emerald_component_level_3",

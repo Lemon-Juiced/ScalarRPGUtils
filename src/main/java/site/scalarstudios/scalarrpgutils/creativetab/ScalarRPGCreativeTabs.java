@@ -18,14 +18,12 @@ import java.util.ArrayList;
 public class ScalarRPGCreativeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ScalarRPGUtils.MODID);
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> SCALAR_RPG_ITEMS_TAB = CREATIVE_MODE_TABS.register("scalarrpgutils_items" +
-            "", () -> CreativeModeTab.builder()
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> SCALAR_RPG_ITEMS_TAB = CREATIVE_MODE_TABS.register("scalarrpgutils_items", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.scalarrpgutils.items"))
             .icon(() -> new ItemStack(ScalarRPGItems.NETHERITE_BURNISHER.get()))
             .build());
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> SCALAR_RPG_CURIOS_TAB = CREATIVE_MODE_TABS.register("scalarrpgutils_curios" +
-            "", () -> CreativeModeTab.builder()
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> SCALAR_RPG_CURIOS_TAB = CREATIVE_MODE_TABS.register("scalarrpgutils_curios", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.scalarrpgutils.curios"))
             .icon(() -> new ItemStack(ScalarRPGItems.COPPER_GLOVES_LEVEL_1.get()))
             .build());

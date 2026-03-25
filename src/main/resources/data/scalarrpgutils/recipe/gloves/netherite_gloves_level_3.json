@@ -6,12 +6,8 @@
     " gg"
   ],
   "key": {
-    "#": {
-      "item": "scalarrpgutils:netherite_component_level_3"
-    },
-    "g": {
-      "item": "minecraft:gold_ingot"
-    }
+    "#": "scalarrpgutils:netherite_component_level_3",
+    "g": "minecraft:gold_ingot"
   },
   "result": {
     "id": "scalarrpgutils:netherite_gloves_level_3",

@@ -1,7 +1,7 @@
 plugins {
     id 'java-library'
     id 'maven-publish'
-    id 'net.neoforged.moddev' version '2.0.120'
+    id 'net.neoforged.moddev' version '2.0.141'
     id 'idea'
 }
 
@@ -11,6 +11,12 @@ tasks.named('wrapper', Wrapper).configure {
 
 version = mod_version
 group = mod_group_id
+
+sourceSets.main.resources {
+    srcDir('src/generated/resources')
+    exclude("**/*.bbmodel")
+    exclude("src/generated/**/.cache")
+}
 
 repositories {
     mavenLocal()
@@ -27,20 +33,14 @@ base {
     archivesName = mod_id
 }
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+java.toolchain.languageVersion = JavaLanguageVersion.of(25)
 
 neoForge {
     version = project.neo_version
 
-    parchment {
-        mappingsVersion = project.parchment_mappings_version
-        minecraftVersion = project.parchment_minecraft_version
-    }
-
     runs {
         client {
             client()
-
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
         }
 
@@ -56,14 +56,12 @@ neoForge {
         }
 
         data {
-            data()
-
+            clientData()
             programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
         }
 
         configureEach {
             systemProperty 'forge.logging.markers', 'REGISTRIES'
-
             logLevel = org.slf4j.event.Level.DEBUG
         }
     }
@@ -75,23 +73,21 @@ neoForge {
     }
 }
 
-sourceSets.main.resources { srcDir 'src/generated/resources' }
-
 configurations {
     runtimeClasspath.extendsFrom localRuntime
 }
 
 dependencies {
     // Scalar Core Dependency
-    implementation "curse.maven:scalar_core-1112771:6858242"  // Scalar Core
+    implementation "curse.maven:scalar-core-1112771:7809174" // Scalar Core
 
     // Curios Dependency
-    runtimeOnly "top.theillusivec4.curios:curios-neoforge:9.5.1+1.21.1"
-    compileOnly "top.theillusivec4.curios:curios-neoforge:9.5.1+1.21.1:api"
+    runtimeOnly "top.theillusivec4.curios:curios-neoforge:15.0.0-beta.1+26.1"
+    compileOnly "top.theillusivec4.curios:curios-neoforge:15.0.0-beta.1+26.1:api"
 
     // QoL For Testing
-    implementation "curse.maven:jade-324717:6853386" // Jade
-    implementation "curse.maven:jei-238222:6829086" // JEI
+    //implementation "curse.maven:jade-324717:6853386" // Jade
+    //implementation "curse.maven:jei-238222:6829086" // JEI
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
@@ -99,13 +95,10 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
             minecraft_version      : minecraft_version,
             minecraft_version_range: minecraft_version_range,
             neo_version            : neo_version,
-            loader_version_range   : loader_version_range,
             mod_id                 : mod_id,
             mod_name               : mod_name,
             mod_license            : mod_license,
             mod_version            : mod_version,
-            mod_authors            : mod_authors,
-            mod_description        : mod_description
     ]
     inputs.properties replaceProperties
     expand replaceProperties

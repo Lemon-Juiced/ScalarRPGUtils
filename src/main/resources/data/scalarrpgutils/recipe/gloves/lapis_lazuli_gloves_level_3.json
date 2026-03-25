@@ -6,12 +6,8 @@
     " gg"
   ],
   "key": {
-    "#": {
-      "item": "scalarrpgutils:lapis_lazuli_component_level_3"
-    },
-    "g": {
-      "item": "minecraft:gold_ingot"
-    }
+    "#": "scalarrpgutils:lapis_lazuli_component_level_3",
+    "g": "minecraft:gold_ingot"
   },
   "result": {
     "id": "scalarrpgutils:lapis_lazuli_gloves_level_3",

@@ -6,12 +6,8 @@
     " gg"
   ],
   "key": {
-    "#": {
-      "item": "scalarrpgutils:diamond_component_level_1"
-    },
-    "g": {
-      "item": "minecraft:gold_ingot"
-    }
+    "#": "scalarrpgutils:diamond_component_level_1",
+    "g": "minecraft:gold_ingot"
   },
   "result": {
     "id": "scalarrpgutils:diamond_gloves_level_1",

@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "minecraft:copper_ingot"
-    },
-    {
-      "item": "scalarrpgutils:netherite_burnisher"
-    }
+    "minecraft:copper_ingot",
+    "scalarrpgutils:netherite_burnisher"
   ],
   "result": {
     "id": "scalarrpgutils:copper_component_level_3",

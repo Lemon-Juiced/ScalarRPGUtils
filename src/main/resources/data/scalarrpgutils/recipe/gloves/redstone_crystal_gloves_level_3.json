@@ -6,12 +6,8 @@
     " gg"
   ],
   "key": {
-    "#": {
-      "item": "scalarrpgutils:redstone_crystal_component_level_3"
-    },
-    "g": {
-      "item": "minecraft:gold_ingot"
-    }
+    "#": "scalarrpgutils:redstone_crystal_component_level_3",
+    "g": "minecraft:gold_ingot"
   },
   "result": {
     "id": "scalarrpgutils:redstone_crystal_gloves_level_3",

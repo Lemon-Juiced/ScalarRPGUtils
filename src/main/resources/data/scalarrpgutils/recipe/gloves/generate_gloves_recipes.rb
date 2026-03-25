@@ -41,8 +41,8 @@ materials.each do |mat|
       'type' => 'minecraft:crafting_shaped',
       'pattern' => pattern,
       'key' => {
-        '#' => { 'item' => component_id },
-        'g' => { 'item' => base_item }
+        '#' => component_id,
+        'g' => base_item
       },
       'result' => {
         'id' => "scalarrpgutils:#{mat}_gloves_level_#{lvl}",

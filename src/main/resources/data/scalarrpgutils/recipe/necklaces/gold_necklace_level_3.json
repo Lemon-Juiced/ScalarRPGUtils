@@ -6,15 +6,9 @@
     "  #"
   ],
   "key": {
-    "#": {
-      "item": "scalarrpgutils:gold_component_level_3"
-    },
-    "s": {
-      "item": "minecraft:string"
-    },
-    "g": {
-      "item": "minecraft:gold_ingot"
-    }
+    "#": "scalarrpgutils:gold_component_level_3",
+    "s": "minecraft:string",
+    "g": "minecraft:gold_ingot"
   },
   "result": {
     "id": "scalarrpgutils:gold_necklace_level_3",

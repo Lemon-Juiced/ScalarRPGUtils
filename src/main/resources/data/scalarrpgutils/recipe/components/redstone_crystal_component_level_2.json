@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "minecraft:redstone_block"
-    },
-    {
-      "item": "scalarrpgutils:diamond_burnisher"
-    }
+    "minecraft:redstone_block",
+    "scalarrpgutils:diamond_burnisher"
   ],
   "result": {
     "id": "scalarrpgutils:redstone_crystal_component_level_2",

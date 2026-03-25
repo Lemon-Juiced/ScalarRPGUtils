@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "minecraft:gold_ingot"
-    },
-    {
-      "item": "scalarrpgutils:netherite_burnisher"
-    }
+    "minecraft:gold_ingot",
+    "scalarrpgutils:netherite_burnisher"
   ],
   "result": {
     "id": "scalarrpgutils:gold_component_level_3",

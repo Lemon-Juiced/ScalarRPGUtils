@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "minecraft:quartz"
-    },
-    {
-      "item": "scalarrpgutils:diamond_burnisher"
-    }
+    "minecraft:quartz",
+    "scalarrpgutils:diamond_burnisher"
   ],
   "result": {
     "id": "scalarrpgutils:quartz_component_level_2",

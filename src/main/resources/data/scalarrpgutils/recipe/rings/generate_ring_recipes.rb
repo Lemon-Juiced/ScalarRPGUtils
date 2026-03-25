@@ -41,8 +41,8 @@ materials.each do |mat|
       'type' => 'minecraft:crafting_shaped',
       'pattern' => pattern,
       'key' => {
-        '#' => { 'item' => component_id },
-        'g' => { 'item' => gold_item }
+        '#' => component_id,
+        'g' => gold_item
       },
       'result' => {
         'id' => "scalarrpgutils:#{mat}_ring_level_#{lvl}",

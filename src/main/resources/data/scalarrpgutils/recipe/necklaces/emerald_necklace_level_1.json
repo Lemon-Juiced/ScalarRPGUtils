@@ -6,15 +6,9 @@
     "  #"
   ],
   "key": {
-    "#": {
-      "item": "scalarrpgutils:emerald_component_level_1"
-    },
-    "s": {
-      "item": "minecraft:string"
-    },
-    "g": {
-      "item": "minecraft:gold_ingot"
-    }
+    "#": "scalarrpgutils:emerald_component_level_1",
+    "s": "minecraft:string",
+    "g": "minecraft:gold_ingot"
   },
   "result": {
     "id": "scalarrpgutils:emerald_necklace_level_1",

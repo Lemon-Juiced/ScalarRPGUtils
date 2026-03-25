@@ -2,50 +2,49 @@ package site.scalarstudios.scalarrpgutils.item;
 
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import site.scalarstudios.scalarrpgutils.ScalarRPGUtils;
 import site.scalarstudios.scalarrpgutils.item.custom.BurnisherItem;
 import site.scalarstudios.scalarrpgutils.item.curios.AbstractCurioItem;
 import site.scalarstudios.scalarrpgutils.item.custom.ComponentItem;
 
-import java.util.function.Supplier;
-
 public class ScalarRPGItems {
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.createItems(ScalarRPGUtils.MODID);
+    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(ScalarRPGUtils.MODID);
 
     // Burnishers
-    public static final Supplier<Item> IRON_BURNISHER = ITEMS.register("iron_burnisher", () -> new BurnisherItem(new Item.Properties(), "iron"));
-    public static final Supplier<Item> DIAMOND_BURNISHER = ITEMS.register("diamond_burnisher", () -> new BurnisherItem(new Item.Properties(), "diamond"));
-    public static final Supplier<Item> NETHERITE_BURNISHER = ITEMS.register("netherite_burnisher", () -> new BurnisherItem(new Item.Properties(), "netherite"));
+    public static final DeferredItem<Item> IRON_BURNISHER = ITEMS.registerItem("iron_burnisher", properties -> new BurnisherItem(properties, "iron"));
+    public static final DeferredItem<Item> DIAMOND_BURNISHER = ITEMS.registerItem("diamond_burnisher", properties -> new BurnisherItem(properties, "diamond"));
+    public static final DeferredItem<Item> NETHERITE_BURNISHER = ITEMS.registerItem("netherite_burnisher", properties -> new BurnisherItem(properties, "netherite"));
 
     // Components
-    public static final Supplier<Item> COPPER_COMPONENT_LEVEL_1 = ITEMS.register("copper_component_level_1", () -> new ComponentItem(1));
-    public static final Supplier<Item> COPPER_COMPONENT_LEVEL_2 = ITEMS.register("copper_component_level_2", () -> new ComponentItem(2));
-    public static final Supplier<Item> COPPER_COMPONENT_LEVEL_3 = ITEMS.register("copper_component_level_3", () -> new ComponentItem(3));
-    public static final Supplier<Item> DIAMOND_COMPONENT_LEVEL_1 = ITEMS.register("diamond_component_level_1", () -> new ComponentItem(1));
-    public static final Supplier<Item> DIAMOND_COMPONENT_LEVEL_2 = ITEMS.register("diamond_component_level_2", () -> new ComponentItem(2));
-    public static final Supplier<Item> DIAMOND_COMPONENT_LEVEL_3 = ITEMS.register("diamond_component_level_3", () -> new ComponentItem(3));
-    public static final Supplier<Item> EMERALD_COMPONENT_LEVEL_1 = ITEMS.register("emerald_component_level_1", () -> new ComponentItem(1));
-    public static final Supplier<Item> EMERALD_COMPONENT_LEVEL_2 = ITEMS.register("emerald_component_level_2", () -> new ComponentItem(2));
-    public static final Supplier<Item> EMERALD_COMPONENT_LEVEL_3 = ITEMS.register("emerald_component_level_3", () -> new ComponentItem(3));
-    public static final Supplier<Item> GOLD_COMPONENT_LEVEL_1 = ITEMS.register("gold_component_level_1", () -> new ComponentItem(1));
-    public static final Supplier<Item> GOLD_COMPONENT_LEVEL_2 = ITEMS.register("gold_component_level_2", () -> new ComponentItem(2));
-    public static final Supplier<Item> GOLD_COMPONENT_LEVEL_3 = ITEMS.register("gold_component_level_3", () -> new ComponentItem(3));
-    public static final Supplier<Item> LAPIS_LAZULI_COMPONENT_LEVEL_1 = ITEMS.register("lapis_lazuli_component_level_1", () -> new ComponentItem(1));
-    public static final Supplier<Item> LAPIS_LAZULI_COMPONENT_LEVEL_2 = ITEMS.register("lapis_lazuli_component_level_2", () -> new ComponentItem(2));
-    public static final Supplier<Item> LAPIS_LAZULI_COMPONENT_LEVEL_3 = ITEMS.register("lapis_lazuli_component_level_3", () -> new ComponentItem(3));
-    public static final Supplier<Item> NETHERITE_COMPONENT_LEVEL_1 = ITEMS.register("netherite_component_level_1", () -> new ComponentItem(1));
-    public static final Supplier<Item> NETHERITE_COMPONENT_LEVEL_2 = ITEMS.register("netherite_component_level_2", () -> new ComponentItem(2));
-    public static final Supplier<Item> NETHERITE_COMPONENT_LEVEL_3 = ITEMS.register("netherite_component_level_3", () -> new ComponentItem(3));
-    public static final Supplier<Item> QUARTZ_COMPONENT_LEVEL_1 = ITEMS.register("quartz_component_level_1", () -> new ComponentItem(1));
-    public static final Supplier<Item> QUARTZ_COMPONENT_LEVEL_2 = ITEMS.register("quartz_component_level_2", () -> new ComponentItem(2));
-    public static final Supplier<Item> QUARTZ_COMPONENT_LEVEL_3 = ITEMS.register("quartz_component_level_3", () -> new ComponentItem(3));
-    public static final Supplier<Item> REDSTONE_CRYSTAL_COMPONENT_LEVEL_1 = ITEMS.register("redstone_crystal_component_level_1", () -> new ComponentItem(1));
-    public static final Supplier<Item> REDSTONE_CRYSTAL_COMPONENT_LEVEL_2 = ITEMS.register("redstone_crystal_component_level_2", () -> new ComponentItem(2));
-    public static final Supplier<Item> REDSTONE_CRYSTAL_COMPONENT_LEVEL_3 = ITEMS.register("redstone_crystal_component_level_3", () -> new ComponentItem(3));
+    public static final DeferredItem<Item> COPPER_COMPONENT_LEVEL_1 = ITEMS.registerItem("copper_component_level_1", properties -> new ComponentItem(properties, 1));
+    public static final DeferredItem<Item> COPPER_COMPONENT_LEVEL_2 = ITEMS.registerItem("copper_component_level_2", properties -> new ComponentItem(properties, 2));
+    public static final DeferredItem<Item> COPPER_COMPONENT_LEVEL_3 = ITEMS.registerItem("copper_component_level_3", properties -> new ComponentItem(properties, 3));
+    public static final DeferredItem<Item> DIAMOND_COMPONENT_LEVEL_1 = ITEMS.registerItem("diamond_component_level_1", properties -> new ComponentItem(properties, 1));
+    public static final DeferredItem<Item> DIAMOND_COMPONENT_LEVEL_2 = ITEMS.registerItem("diamond_component_level_2", properties -> new ComponentItem(properties, 2));
+    public static final DeferredItem<Item> DIAMOND_COMPONENT_LEVEL_3 = ITEMS.registerItem("diamond_component_level_3", properties -> new ComponentItem(properties, 3));
+    public static final DeferredItem<Item> EMERALD_COMPONENT_LEVEL_1 = ITEMS.registerItem("emerald_component_level_1", properties -> new ComponentItem(properties, 1));
+    public static final DeferredItem<Item> EMERALD_COMPONENT_LEVEL_2 = ITEMS.registerItem("emerald_component_level_2", properties -> new ComponentItem(properties, 2));
+    public static final DeferredItem<Item> EMERALD_COMPONENT_LEVEL_3 = ITEMS.registerItem("emerald_component_level_3", properties -> new ComponentItem(properties, 3));
+    public static final DeferredItem<Item> GOLD_COMPONENT_LEVEL_1 = ITEMS.registerItem("gold_component_level_1", properties -> new ComponentItem(properties, 1));
+    public static final DeferredItem<Item> GOLD_COMPONENT_LEVEL_2 = ITEMS.registerItem("gold_component_level_2", properties -> new ComponentItem(properties, 2));
+    public static final DeferredItem<Item> GOLD_COMPONENT_LEVEL_3 = ITEMS.registerItem("gold_component_level_3", properties -> new ComponentItem(properties, 3));
+    public static final DeferredItem<Item> LAPIS_LAZULI_COMPONENT_LEVEL_1 = ITEMS.registerItem("lapis_lazuli_component_level_1", properties -> new ComponentItem(properties, 1));
+    public static final DeferredItem<Item> LAPIS_LAZULI_COMPONENT_LEVEL_2 = ITEMS.registerItem("lapis_lazuli_component_level_2", properties -> new ComponentItem(properties, 2));
+    public static final DeferredItem<Item> LAPIS_LAZULI_COMPONENT_LEVEL_3 = ITEMS.registerItem("lapis_lazuli_component_level_3", properties -> new ComponentItem(properties, 3));
+    public static final DeferredItem<Item> NETHERITE_COMPONENT_LEVEL_1 = ITEMS.registerItem("netherite_component_level_1", properties -> new ComponentItem(properties, 1));
+    public static final DeferredItem<Item> NETHERITE_COMPONENT_LEVEL_2 = ITEMS.registerItem("netherite_component_level_2", properties -> new ComponentItem(properties, 2));
+    public static final DeferredItem<Item> NETHERITE_COMPONENT_LEVEL_3 = ITEMS.registerItem("netherite_component_level_3", properties -> new ComponentItem(properties, 3));
+    public static final DeferredItem<Item> QUARTZ_COMPONENT_LEVEL_1 = ITEMS.registerItem("quartz_component_level_1", properties -> new ComponentItem(properties, 1));
+    public static final DeferredItem<Item> QUARTZ_COMPONENT_LEVEL_2 = ITEMS.registerItem("quartz_component_level_2", properties -> new ComponentItem(properties, 2));
+    public static final DeferredItem<Item> QUARTZ_COMPONENT_LEVEL_3 = ITEMS.registerItem("quartz_component_level_3", properties -> new ComponentItem(properties, 3));
+    public static final DeferredItem<Item> REDSTONE_CRYSTAL_COMPONENT_LEVEL_1 = ITEMS.registerItem("redstone_crystal_component_level_1", properties -> new ComponentItem(properties, 1));
+    public static final DeferredItem<Item> REDSTONE_CRYSTAL_COMPONENT_LEVEL_2 = ITEMS.registerItem("redstone_crystal_component_level_2", properties -> new ComponentItem(properties, 2));
+    public static final DeferredItem<Item> REDSTONE_CRYSTAL_COMPONENT_LEVEL_3 = ITEMS.registerItem("redstone_crystal_component_level_3", properties -> new ComponentItem(properties, 3));
 
     // Registered Separately for Creative Tab
-    public static final Supplier<Item> COPPER_GLOVES_LEVEL_1 = ITEMS.register("copper_gloves_level_1", () -> new AbstractCurioItem("copper", 1));
+    public static final DeferredItem<Item> COPPER_GLOVES_LEVEL_1 = ITEMS.registerItem("copper_gloves_level_1", properties -> new AbstractCurioItem(properties, "copper", 1));
 
     public static void generateCurioItemsFactory() {
         String[] resources = {"copper", "diamond", "emerald", "gold", "lapis_lazuli", "netherite", "quartz", "redstone_crystal"};
@@ -59,7 +58,7 @@ public class ScalarRPGItems {
 
                     // Make an example for Copper Gloves Level 1, so it can be easily registered for the Creative Tab (Do not register here)
                     if (!(resources[i].equals("copper") && types[j].equals("gloves") && level == 1)) {
-                        ITEMS.register(itemName, () -> new AbstractCurioItem(resources[finalI], finalLevel));
+                        ITEMS.registerItem(itemName, properties -> new AbstractCurioItem(properties, resources[finalI], finalLevel));
                     }
                 }
             }

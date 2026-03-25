@@ -6,12 +6,8 @@
     " g "
   ],
   "key": {
-    "#": {
-      "item": "scalarrpgutils:copper_component_level_3"
-    },
-    "g": {
-      "item": "minecraft:gold_ingot"
-    }
+    "#": "scalarrpgutils:copper_component_level_3",
+    "g": "minecraft:gold_ingot"
   },
   "result": {
     "id": "scalarrpgutils:copper_ring_level_3",

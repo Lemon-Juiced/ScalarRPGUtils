@@ -11,25 +11,27 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.component.TooltipDisplay;
 import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
-import java.util.List;
+import java.util.function.Consumer;
 
 public class AbstractCurioItem extends Item implements ICurioItem {
     private final String resource;
     private final int level;
 
-    public AbstractCurioItem(String resource, int level) {
-        super(new Item.Properties().stacksTo(1));
+    public AbstractCurioItem(Item.Properties properties, String resource, int level) {
+        super(properties.stacksTo(1));
         this.resource = resource;
         this.level = level;
     }
 
+    @SuppressWarnings("deprecation")
     @Override
-    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+    public void appendHoverText(ItemStack stack, Item.TooltipContext context, TooltipDisplay tooltipDisplay, Consumer<Component> tooltipAdder, TooltipFlag tooltipFlag) {
         String tooltipKey = "tooltip.scalarrpgutils.item." + resource + "_level_" + level;
-        tooltipComponents.add(Component.translatable(tooltipKey).withStyle(ChatFormatting.GRAY));
+        tooltipAdder.accept(Component.translatable(tooltipKey).withStyle(ChatFormatting.GRAY));
     }
 
     /**
@@ -76,20 +78,20 @@ public class AbstractCurioItem extends Item implements ICurioItem {
                 effectToApply1 = MobEffects.ABSORPTION;
                 break;
             case "gold":
-                effectToApply1 = MobEffects.MOVEMENT_SPEED;
+                effectToApply1 = MobEffects.SPEED;
                 break;
             case "lapis_lazuli":
-                effectToApply1 = MobEffects.DAMAGE_BOOST;
+                effectToApply1 = MobEffects.STRENGTH;
                 break;
             case "netherite":
                 effectToApply1 = MobEffects.FIRE_RESISTANCE;
-                effectToApply2 = MobEffects.DAMAGE_BOOST;
+                effectToApply2 = MobEffects.STRENGTH;
                 break;
             case "quartz":
-                effectToApply1 = MobEffects.JUMP;
+                effectToApply1 = MobEffects.JUMP_BOOST;
                 break;
             case "redstone_crystal":
-                effectToApply1 = MobEffects.DIG_SPEED;
+                effectToApply1 = MobEffects.HASTE;
                 break;
         }
 

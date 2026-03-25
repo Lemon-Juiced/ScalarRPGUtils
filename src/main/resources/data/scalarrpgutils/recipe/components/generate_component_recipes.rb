@@ -40,8 +40,8 @@ materials.each do |mat|
     recipe = {
       'type' => 'minecraft:crafting_shapeless',
       'ingredients' => [
-        { 'item' => ingredient_item },
-        { 'item' => burnisher_item }
+        ingredient_item,
+        burnisher_item
       ],
       'result' => {
         'id' => "scalarrpgutils:#{mat}_component_level_#{lvl}",

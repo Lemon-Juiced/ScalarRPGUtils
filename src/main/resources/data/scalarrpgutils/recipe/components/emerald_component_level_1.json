@@ -1,12 +1,8 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "minecraft:emerald"
-    },
-    {
-      "item": "scalarrpgutils:iron_burnisher"
-    }
+    "minecraft:emerald",
+    "scalarrpgutils:iron_burnisher"
   ],
   "result": {
     "id": "scalarrpgutils:emerald_component_level_1",
