@@ -78,16 +78,13 @@ configurations {
 }
 
 dependencies {
-    // Scalar Core Dependency
-    implementation "curse.maven:scalar-core-1112771:7809174" // Scalar Core
-
     // Curios Dependency
     runtimeOnly "top.theillusivec4.curios:curios-neoforge:15.0.0-beta.1+26.1"
     compileOnly "top.theillusivec4.curios:curios-neoforge:15.0.0-beta.1+26.1:api"
 
     // QoL For Testing
-    //implementation "curse.maven:jade-324717:6853386" // Jade
-    //implementation "curse.maven:jei-238222:6829086" // JEI
+    implementation "curse.maven:jade-324717:7817285" // Jade
+    implementation "curse.maven:jei-238222:7861613" // JEI
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

@@ -29,6 +29,6 @@ The RPG focused spin-off of Scalar Utils for Minecraft 26.1+
 [[dependencies.${mod_id}]]
     modId="curios"
     type="required"
-    versionRange="[9.5.1+1.21.1,)"
+    versionRange="[15.0.0-beta.1+26.1,)"
     ordering="NONE"
     side="BOTH"
